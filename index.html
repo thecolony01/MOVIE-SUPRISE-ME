@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Movie Selector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Random Movie Selector</h1>
+    <div class="controls">
+      <label for="genre">Select Genre:</label>
+      <select id="genre">
+        <option value="all">All</option>
+        <option value="action">Action</option>
+        <option value="animation">Animation</option>
+        <option value="drama">Drama</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="comedy">Comedy</option>
+        <option value="horror">Horror</option>
+      </select>
+      <label for="year">Select Year:</label>
+      <select id="year">
+        <option value="all">All</option>
+        <option value="2000-2005">2000-2005</option>
+        <option value="2006-2010">2006-2010</option>
+        <option value="2011-2015">2011-2015</option>
+        <option value="2016-2020">2016-2020</option>
+        <option value="2021-2024">2021-2024</option>
+      </select>
+    </div>
+    <div class="movie-display">
+      <p id="movie-output">Select a genre and year, then click the button to pick a movie!</p>
+    </div>
+    <button onclick="selectRandomMovie()">Suprise Me!</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
